@@ -1,0 +1,134 @@
+.App {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+
+/* Responsive title */
+
+@media screen and (min-width: 601px) {
+    .App-header {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .App-header {
+        font-size: 30px;
+    }
+}
+
+.App-header{
+    width: 100%;
+}
+
+
+    .calcFrame {
+        
+        border: black solid 2px;
+        border-radius: 15px;
+        margin: 2ch;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        width: 600px;
+        background-color: rgb(0, 143, 143);
+    }
+
+
+
+/* Area */
+
+.screen-area {
+    border: black solid 1px;
+    border-radius: 10px;
+    font-size: 2rem;
+    background-color: whitesmoke;
+    height: 4rem;
+    grid-column: span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Operations Numbers */
+
+.operation-buttons-area {
+    background-color: whitesmoke;
+    border: black solid 1px;
+    grid-row: span 4;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.operation {
+    background-color: rgb(136, 136, 136);
+    font-size: 1.5em;
+    border: rgb(136, 136, 136) solid 1px;
+    border-radius: 10px;
+    width: 99%;
+    align-content: space-around;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.operation:hover{
+    background-color: whitesmoke;
+    transform: translate(-1px, -1px);
+    box-shadow: 1px 1px;
+}
+
+.operation:active{
+    background-color: rgb(136, 136, 136);
+    transform: translate(1px, 1px);
+    box-shadow: none;
+}
+
+
+/* Number Buttons */
+
+.number-buttons-area {
+    background-color: whitesmoke;
+    border: black solid 1px;
+    grid-column: span 3;
+    grid-row: span 4;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.number {
+    background-color: rgb(136, 136, 136);
+    font-size: 1.5em;
+    border: rgb(136, 136, 136) solid 1px;
+    border-radius: 10px;
+    width: 128px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number:hover{
+    background-color: whitesmoke;
+    transform: translate(-1px, -1px);
+    box-shadow: 1px 1px;
+}
+
+.number:active{
+    background-color: rgb(136, 136, 136);
+    transform: translate(1px, 1px);
+    box-shadow: none;
+}
